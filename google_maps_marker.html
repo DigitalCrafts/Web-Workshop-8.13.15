@@ -1,0 +1,36 @@
+
+<!-- Include jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include Google Maps API script -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+<!-- Include our JavaScript (this was migrated to an external file as we mentioned at the end of the meetup) -->
+<script src="meetup.js"></script>
+
+<!-- Include our CSS (this was migrated to an external file as we mentioned at the end of the meetup) -->
+<link rel="stylesheet" type="text/css" href="meetup.css">
+
+
+<!-- Begin our HTML -->
+<div id="header">
+  <div id="input-wrapper">
+    <form id="location-search" name="location-search">
+      <!-- Location box -->
+      <div id="what-loc">
+        What location would you like to plot
+        <input type="text" name="location" id="location">
+      </div>
+      <!-- Infobox text -->
+      <div id="location-text">
+        What would you like to say about this location?
+        <input type="text" name="location-marker-text" id="location-marker-text">
+      </div>
+      <!-- Zoom box -->
+      <div id="zoom-text">
+        What zoom level would you like to use?
+        <input type="text" name="zoom" id="zoom">
+      </div>
+      <input type="submit" name="submit" id="submit" value="Get the marker!">
+    </form>
+  </div>
+</div>
+<div id="map-canvas"></div>
